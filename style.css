@@ -30,4 +30,8 @@
         height: calc(100% - 56px) !important;
     }
 
+    main {
+        margin-left: 270px;
+    }
+
 }
