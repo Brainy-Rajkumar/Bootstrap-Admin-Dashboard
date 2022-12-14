@@ -42,14 +42,24 @@
                     Brainy Rk
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end bg-secondary">
-                    <li><a class="dropdown-item text-white" href="#">Settings</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Profile</a></li>
-                    <li><a class="dropdown-item text-white" href="#">My Message</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Lock Screen</a></li>
+                    <li><a class="dropdown-item text-white" href="#">
+                            <i class="bi bi-gear me-1"></i>
+                            Settings</a></li>
+                    <li><a class="dropdown-item text-white" href="#">
+                            <i class="bi bi-person me-1"></i>
+                            Profile</a></li>
+                    <li><a class="dropdown-item text-white" href="#">
+                            <i class="bi bi-envelope me-1"></i>
+                            My Message</a></li>
+                    <li><a class="dropdown-item text-white" href="#">
+                            <i class="bi bi-lock me-1"></i>
+                            Lock Screen</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                    <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-box-arrow-right me-1"></i>
+                            Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -67,7 +77,7 @@
             <nav class="navbar-dark">
                 <ul class="navbar-nav">
                     <li>
-                        <div class="small px-3">Navigation</div>
+                        <div class="small px-3 mb-2">Navigation</div>
                     </li>
                     <!-- Dashboard -->
                     <li>
@@ -107,7 +117,7 @@
                     <li>
                         <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample-2"
                             role="button" aria-expanded="false" aria-controls="collapseExample-2">
-                            <span class="me-2"><i class="bi bi-house-door"></i></span>
+                            <span class="me-2"><i class="bi bi-layout-sidebar"></i></span>
                             <span>Page Layouts</span>
                             <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
                         </a>
@@ -203,44 +213,48 @@
 
             <div class="row">
                 <div class="row mt-4 ms-3">
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="card h-100 border-light">
+                            <div class="card-body bg-white">
+                                <h5 class="card-title text-warning">$30200</h5>
+                                <p class="card-text text-secondary">
+                                    All Earnings
+                                </p>
                             </div>
-                            <div class="card-footer">ok</div>
+                            <div class="card-footer bg-warning text-white">% change</div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-success h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="card h-100 border-light">
+                            <div class="card-body bg-white">
+                                <h5 class="card-title text-success">290+</h5>
+                                <p class="card-text text-secondary">
+                                    Page Views
+                                </p>
                             </div>
-                            <div class="card-footer">ok</div>
+                            <div class="card-footer bg-success text-white">% change</div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-danger h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="card h-100 border-light">
+                            <div class="card-body bg-white">
+                                <h5 class="card-title text-danger">145</h5>
+                                <p class="card-text text-secondary">
+                                    Task Completed
+                                </p>
                             </div>
-                            <div class="card-footer">ok</div>
+                            <div class="card-footer bg-danger text-white">% change</div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-info h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="card h-100 border-light">
+                            <div class="card-body bg-white">
+                                <h5 class="card-title text-info">500</h5>
+                                <p class="card-text text-secondary">
+                                    Downloads
+                                </p>
                             </div>
-                            <div class="card-footer">ok</div>
+                            <div class="card-footer bg-info text-white">% change</div>
                         </div>
                     </div>
                 </div>
@@ -249,31 +263,47 @@
             <!-- ChartJs -->
 
             <div class="row mt-3">
-                <div class="col-md-8">
+                <div class="col-lg-8 mb-4">
                     <div class="card ms-4">
                         <div class="card-header">
                             Visitors
                         </div>
                         <div class="card-body">
-                            <canvas class="chart" width="400" height="200">
+                            <canvas class="chart">
 
                             </canvas>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card ms-4">
                         <div class="card-header">
                             Visitors
                         </div>
                         <div class="card-body">
-                            <canvas class="chart" height="335">
+                            <div>
+                                <canvas class="chart2">
 
-                            </canvas>
+                                </canvas>
+                            </div>
+                            <div class="row h-100 mt-2">
+                                <span class="text-secondary">Total completed project and earning</span>
+                                <div class="col text-center mt-4">
+                                    <span class="text-secondary">Completed Projects</span>
+                                    <br>
+                                    <h3 class="mt-2">175</h3>
+                                </div>
+                                <div class="col text-center mt-4">
+                                    <span class="text-secondary">Total Earnings</span>
+                                    <br>
+                                    <h3 class="mt-2">76.6M</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </main>
@@ -282,6 +312,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-gradient"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/index.js"></script>
 </body>

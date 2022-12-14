@@ -1,4 +1,8 @@
 
+body{
+    background-color:rgb(220, 233, 245);
+}
+
 .navbar {
     height: 56px !important;
 }
