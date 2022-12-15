@@ -4,7 +4,7 @@ body{
 }
 
 .navbar {
-    height: 56px !important;
+    height: 62px;
 }
 
 .sidebar-link {
@@ -30,12 +30,14 @@ body{
     .offcanvas {
         transform: none !important;
         visibility: visible !important;
-        top: 56px !important;
-        height: calc(100% - 56px) !important;
     }
 
     main {
         margin-left: 270px;
+    }
+
+    .targetNav{
+        margin-left: 180px;
     }
 
 }

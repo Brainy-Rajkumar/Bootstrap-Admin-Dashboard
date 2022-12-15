@@ -4,7 +4,7 @@ const charts = document.querySelectorAll(".chart");
 charts.forEach(function (chart) {
   var ctx = chart.getContext("2d");
   var myChart = new Chart(ctx, {
-    type: "bar",
+    type: "line",
     data: {
       labels: ["Jan 9", "Jan 12", "Jan 15", "Jan 18", "Jan 21", "Jan 24"],
       datasets: [
@@ -52,7 +52,7 @@ const chartx = document.querySelectorAll(".chart2");
 chartx.forEach(function (chart) {
   var ctx = chart.getContext("2d");
   var myChart = new Chart(ctx, {
-    type: "bar",
+    type: "doughnut",
     data: {
       labels: ["Jan 9", "Jan 12", "Jan 15", "Jan 18", "Jan 21", "Jan 24"],
       datasets: [

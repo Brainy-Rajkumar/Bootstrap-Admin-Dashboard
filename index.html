@@ -20,38 +20,50 @@
 
     <!-- NavBar -->
 
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark fixed-top">
         <div class="container-fluid">
 
             <!-- Offcanvas Trigger -->
 
-            <a class="navbar-brand" href="#">Admin Dashboard</a>
+            <div class="">
+                <i class="bi bi-chat-right-heart me-1"></i>
+                <span class="fw-bold text-warning">|</span>
+                <a class="navbar-brand text-secondary" href="#">adminty</a>
 
-            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="bi bi-list text-danger"></span>
+                </button>
+            </div>
+            <!-- Target Here -->
+            <div class="me-auto targetNav">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-crop ms-3"></i>
+            </div>
             <!-- Profile -->
-
             <div class="ms-auto">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-chat-left ms-3"></i>
+            </div>
+
+            <div class="ms-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <img src="/ProfilePix/profile pic.jpg" alt="Profile Pic"
-                        style="height: 20px; width: 20px; border-radius: 100%;">
+                        style="height: 20px; width: 20px; border-radius: 10%;">
                     Brainy Rk
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end bg-secondary">
-                    <li><a class="dropdown-item text-white" href="#">
+                <ul class="dropdown-menu dropdown-menu-end bg-white">
+                    <li><a class="dropdown-item" href="#">
                             <i class="bi bi-gear me-1"></i>
                             Settings</a></li>
-                    <li><a class="dropdown-item text-white" href="#">
+                    <li><a class="dropdown-item" href="#">
                             <i class="bi bi-person me-1"></i>
                             Profile</a></li>
-                    <li><a class="dropdown-item text-white" href="#">
+                    <li><a class="dropdown-item" href="#">
                             <i class="bi bi-envelope me-1"></i>
                             My Message</a></li>
-                    <li><a class="dropdown-item text-white" href="#">
+                    <li><a class="dropdown-item" href="#">
                             <i class="bi bi-lock me-1"></i>
                             Lock Screen</a></li>
                     <li>
@@ -67,44 +79,48 @@
 
     <!-- Off Canvas Data-->
 
-    <div class="offcanvas offcanvas-start bg-secondary text-white" tabindex="-1" id="offcanvasExample"
+    <div class="offcanvas offcanvas-start bg-white border border-0" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Admin Dashboard</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header justify-content-start bg-dark text-white">
+            <i class="bi bi-chat-right-heart me-2"></i>
+            <span class="fw-bold text-warning me-2">|</span>
+            <h5 class="offcanvas-title me-auto" id="offcanvasExampleLabel">adminty</h5>
+            <button type="button" class="bi bi-list bg-dark text-white border border-0" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body p-0">
+        <div class="offcanvas-body p-0 text-dark">
             <nav class="navbar-dark">
                 <ul class="navbar-nav">
                     <li>
-                        <div class="small px-3 mb-2">Navigation</div>
+                        <div class="text-secondary fw-semibold px-3 mt-3 mb-2">Navigation</div>
                     </li>
                     <!-- Dashboard -->
                     <li>
-                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" data-bs-toggle="collapse"
+                            href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <span class="me-2"><i class="bi bi-house-door"></i></span>
-                            <span>Dashboard</span>
+                            <span class="">Dashboard</span>
                             <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
                         </a>
 
                         <div class="collapse" id="collapseExample">
-                            <div class="bg-dark">
+                            <div
+                                class="bg-white border border-5 border-top-0 border-end-0 border-bottom-0 border-warning">
                                 <ul class="navbar-nav ps-3">
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-warning">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>Default</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-dark">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>CRM</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-dark">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>Analytics</span>
                                         </a>
@@ -115,18 +131,19 @@
                     </li>
                     <!-- Page Layouts -->
                     <li>
-                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample-2"
-                            role="button" aria-expanded="false" aria-controls="collapseExample-2">
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" data-bs-toggle="collapse"
+                            href="#collapseExample-2" role="button" aria-expanded="false"
+                            aria-controls="collapseExample-2">
                             <span class="me-2"><i class="bi bi-layout-sidebar"></i></span>
                             <span>Page Layouts</span>
                             <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
                         </a>
                         <!-- Vertical -->
                         <div class="collapse" id="collapseExample-2">
-                            <div class="bg-dark">
+                            <div class="bg-white">
                                 <ul class="navbar-nav ps-3">
 
-                                    <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse"
+                                    <a class="nav-link px-3 sidebar-link text-dark" data-bs-toggle="collapse"
                                         href="#collapseExample-3" role="button" aria-expanded="false"
                                         aria-controls="collapseExample-3">
                                         <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
@@ -135,28 +152,28 @@
                                     </a>
 
                                     <div class="collapse" id="collapseExample-3">
-                                        <div class="bg-dark">
+                                        <div class="bg-white">
                                             <ul class="navbar-nav ps-3">
                                                 <li>
-                                                    <a href="#" class="nav-link px-3">
+                                                    <a href="#" class="nav-link px-3 text-dark">
                                                         <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                                         <span>Static Layout</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" class="nav-link px-3">
+                                                    <a href="#" class="nav-link px-3 text-dark">
                                                         <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                                         <span>Header Fixed</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" class="nav-link px-3">
+                                                    <a href="#" class="nav-link px-3 text-dark">
                                                         <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                                         <span>Compact</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" class="nav-link px-3">
+                                                    <a href="#" class="nav-link px-3 text-dark">
                                                         <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                                         <span>Sidebar Fixed</span>
                                                     </a>
@@ -166,38 +183,139 @@
                                     </div>
                                     <!-- Horizontal -->
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-dark">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>Horizontal</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-dark">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>Bottom Menu</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-dark">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>Box Layout</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-3">
+                                        <a href="#" class="nav-link px-3 text-dark">
                                             <span class="me-2"><i class="bi bi-caret-right-fill"></i></span>
                                             <span>RTL</span>
                                         </a>
                                     </li>
-                                    <!-- Navigation -->
-                                    <!-- Widget -->
-
-                                    <!-- UI Element -->
-
                                 </ul>
                             </div>
                         </div>
                     </li>
+                    <!-- Navigation -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-list border border-0"></i></span>
+                            <span class="">Navigation</span>
+                        </a>
+                    </li>
+                    <!-- Widget -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-stack"></i></span>
+                            <span class="">Widget</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                        </a>
+                    </li>
+                    <!-- UI Element -->
+                    <li>
+                        <div class="text-secondary fw-semibold px-3 mt-3 mb-2">UI Element</div>
+                    </li>
+                    <!-- Basic Components -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-box"></i></span>
+                            <span class="">Basic Components</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                        </a>
+                    </li>
+                    <!-- Advance Components -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-xbox"></i></span>
+                            <span class="">Advance Components</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                        </a>
+                    </li>
+                    <!-- Extra Components -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-box-fill"></i></span>
+                            <span class="">Extra Components</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                        </a>
+                    </li>
+                    <!-- Animations -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-record-circle-fill"></i></span>
+                            <span class="">Animations</span>
+                        </a>
+                    </li>
+                    <!-- Sticky Notes -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-cpu"></i></span>
+                            <span class="">Sticky Notes</span>
+                        </a>
+                    </li>
+                    <!-- Icons -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-flower2"></i></span>
+                            <span class="">Icons</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                        </a>
+                    </li>
+                    <!-- Forms -->
+                    <li>
+                        <div class="text-secondary fw-semibold px-3 mt-3 mb-2">Forms</div>
+                    </li>
+                    <!-- Form Components -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-textarea-resize"></i></span>
+                            <span class="">Form Components</span>
+                            <span class="right-icon ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                        </a>
+                    </li>
+                    <!-- Form Picker -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-pen"></i></span>
+                            <span class="">Form Picker</span>
+                        </a>
+                    </li>
+                    <!-- Form Select -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-vector-pen"></i></span>
+                            <span class="">Form Select</span>
+                        </a>
+                    </li>
+                    <!-- Form Masking -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-shield"></i></span>
+                            <span class="">Form Masking</span>
+                        </a>
+                    </li>
+                    <!-- Form Wizard -->
+                    <li>
+                        <a class="nav-link px-3 sidebar-link text-dark fw-semibold" href="#">
+                            <span class="me-2"><i class="bi bi-tv"></i></span>
+                            <span class="">Form Wizard</span>
+                        </a>
+                    </li>
+                    <!-- END -->
                 </ul>
             </nav>
         </div>
@@ -215,46 +333,58 @@
                 <div class="row mt-4 ms-3">
                     <div class="col-lg-3 col-md-6 mb-3">
                         <div class="card h-100 border-light">
-                            <div class="card-body bg-white">
-                                <h5 class="card-title text-warning">$30200</h5>
-                                <p class="card-text text-secondary">
+                            <div class="card-body bg-warning">
+                                <h5 class="card-title text-white">$30200</h5>
+                                <p class="card-text text-white">
                                     All Earnings
                                 </p>
                             </div>
-                            <div class="card-footer bg-warning text-white">% change</div>
+                            <div class="card-footer bg-warning text-white border 
+                            border-bottom-0 border-end-0 border-start-0 border-2">
+                                update : 2:15
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-3">
                         <div class="card h-100 border-light">
-                            <div class="card-body bg-white">
-                                <h5 class="card-title text-success">290+</h5>
-                                <p class="card-text text-secondary">
+                            <div class="card-body bg-success">
+                                <h5 class="card-title text-white">290+</h5>
+                                <p class="card-text text-white">
                                     Page Views
                                 </p>
                             </div>
-                            <div class="card-footer bg-success text-white">% change</div>
+                            <div class="card-footer bg-success text-white border 
+                            border-bottom-0 border-end-0 border-start-0 border-2">
+                                update : 2:15
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-3">
                         <div class="card h-100 border-light">
-                            <div class="card-body bg-white">
-                                <h5 class="card-title text-danger">145</h5>
-                                <p class="card-text text-secondary">
+                            <div class="card-body bg-danger">
+                                <h5 class="card-title text-white">145</h5>
+                                <p class="card-text text-white">
                                     Task Completed
                                 </p>
                             </div>
-                            <div class="card-footer bg-danger text-white">% change</div>
+                            <div class="card-footer bg-danger text-white border 
+                            border-bottom-0 border-end-0 border-start-0 border-2">
+                                update : 2:15
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-3">
                         <div class="card h-100 border-light">
-                            <div class="card-body bg-white">
-                                <h5 class="card-title text-info">500</h5>
-                                <p class="card-text text-secondary">
+                            <div class="card-body bg-info">
+                                <h5 class="card-title text-white">500</h5>
+                                <p class="card-text text-white">
                                     Downloads
                                 </p>
                             </div>
-                            <div class="card-footer bg-info text-white">% change</div>
+                            <div class="card-footer bg-info text-white border 
+                            border-bottom-0 border-end-0 border-start-0 border-2">
+                                update : 2:15
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,10 +395,10 @@
             <div class="row mt-3">
                 <div class="col-lg-8 mb-4">
                     <div class="card ms-4">
-                        <div class="card-header">
-                            Visitors
-                        </div>
                         <div class="card-body">
+                            <span class="fw-semibold">Sales Analytics</span>
+                            <br>
+                            <span class="text-secondary">For more details about usage, please refer <span class="text-dark">amChar</span> lisences.</span>
                             <canvas class="chart">
 
                             </canvas>
@@ -277,16 +407,13 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card ms-4">
-                        <div class="card-header">
-                            Visitors
-                        </div>
                         <div class="card-body">
                             <div>
                                 <canvas class="chart2">
 
                                 </canvas>
                             </div>
-                            <div class="row h-100 mt-2">
+                            <div class="row mt-2">
                                 <span class="text-secondary">Total completed project and earning</span>
                                 <div class="col text-center mt-4">
                                     <span class="text-secondary">Completed Projects</span>
