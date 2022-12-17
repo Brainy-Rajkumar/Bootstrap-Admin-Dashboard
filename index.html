@@ -332,8 +332,8 @@
             <div class="row">
                 <div class="row mt-4 ms-3">
                     <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card h-100 border-light">
-                            <div class="card-body bg-warning">
+                        <div class="card h-100 border border-0">
+                            <div class="card-body bg-warning border border-0 rounded-top">
                                 <h5 class="card-title text-white">$30200</h5>
                                 <p class="card-text text-white">
                                     All Earnings
@@ -341,27 +341,27 @@
                             </div>
                             <div class="card-footer bg-warning text-white border 
                             border-bottom-0 border-end-0 border-start-0 border-2">
-                                update : 2:15
+                                <i class="bi bi-clock me-2"></i> update : 2:15
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card h-100 border-light">
-                            <div class="card-body bg-success">
+                        <div class="card h-100 border border-0">
+                            <div class="card-body bg-success border border-0 rounded-top">
                                 <h5 class="card-title text-white">290+</h5>
                                 <p class="card-text text-white">
-                                    Page Views
+                                    <i class="bi bi-clock me-2"></i> Page Views
                                 </p>
                             </div>
                             <div class="card-footer bg-success text-white border 
                             border-bottom-0 border-end-0 border-start-0 border-2">
-                                update : 2:15
+                                <i class="bi bi-clock me-2"></i> update : 2:15
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card h-100 border-light">
-                            <div class="card-body bg-danger">
+                        <div class="card h-100 border border-0">
+                            <div class="card-body bg-danger border border-0 rounded-top">
                                 <h5 class="card-title text-white">145</h5>
                                 <p class="card-text text-white">
                                     Task Completed
@@ -369,13 +369,13 @@
                             </div>
                             <div class="card-footer bg-danger text-white border 
                             border-bottom-0 border-end-0 border-start-0 border-2">
-                                update : 2:15
+                                <i class="bi bi-clock me-2"></i> update : 2:15
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card h-100 border-light">
-                            <div class="card-body bg-info">
+                        <div class="card h-100 border border-0">
+                            <div class="card-body bg-info border border-0 rounded-top">
                                 <h5 class="card-title text-white">500</h5>
                                 <p class="card-text text-white">
                                     Downloads
@@ -383,7 +383,7 @@
                             </div>
                             <div class="card-footer bg-info text-white border 
                             border-bottom-0 border-end-0 border-start-0 border-2">
-                                update : 2:15
+                                <i class="bi bi-clock me-2"></i> update : 2:15
                             </div>
                         </div>
                     </div>
@@ -392,44 +392,188 @@
 
             <!-- ChartJs -->
 
-            <div class="row mt-3">
-                <div class="col-lg-8 mb-4">
-                    <div class="card ms-4">
+            <div class="row mt-3 ms-3">
+                <div class="col-lg-9 mb-4">
+                    <div class="card">
                         <div class="card-body">
-                            <span class="fw-semibold">Sales Analytics</span>
-                            <br>
-                            <span class="text-secondary">For more details about usage, please refer <span class="text-dark">amChar</span> lisences.</span>
-                            <canvas class="chart">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <span>Sales Analytics</span>
+                                </div>
+                                <div class="">
+                                    <i class="bi bi-crop me-2"></i>
+                                    <i class="bi bi-dash-lg me-2"></i>
+                                    <i class="bi bi-trash"></i>
+                                </div>
+                            </div>
+                            <span class="text-secondary">For more details about usage, please refer <span
+                                    class="text-dark">amChar</span> lisences.</span>
+                            <canvas class="chart py-4">
 
                             </canvas>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card ms-4">
-                        <div class="card-body">
-                            <div>
-                                <canvas class="chart2">
-
-                                </canvas>
+                <div class="col-lg-3 text-center">
+                    <div class="card">
+                        <p class="mt-4">Project Risk</p>
+                        <!-- Target -->
+                        <div class="mx-auto bg-warning rounded-circle p-5 text-white fs-5 fw-bold"
+                            style="width: 125px;">
+                            5
+                        </div>
+                        <p class="mt-4">Balanced</p>
+                        <div class="row">
+                            <a href="#" class="text-warning mt-3 pb-3 border-bottom border-3">Change Your Risk</a>
+                            <div class="col  mt-4 border-end border-3">
+                                <span class="text-secondary">Nr</span>
+                                <br>
+                                <h6 class="mt-2">AWZ<br>2455</h6>
                             </div>
-                            <div class="row mt-2">
-                                <span class="text-secondary">Total completed project and earning</span>
-                                <div class="col text-center mt-4">
-                                    <span class="text-secondary">Completed Projects</span>
-                                    <br>
-                                    <h3 class="mt-2">175</h3>
+
+                            <div class="col  mt-4">
+                                <span class="text-secondary">Created</span>
+                                <br>
+                                <h6 class="mt-2">30th Sep</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer mt-4 py-4 fw-semibold text-white bg-warning border border-warning">
+                            Download Overall
+                            Report</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table & User Activity -->
+
+            <div class="row mt-3 ms-3 ">
+
+                <div class="col-lg-8 mb-3">
+                    <div class="card">
+                        <div class="card-header py-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <span>Applications Sales</span>
                                 </div>
-                                <div class="col text-center mt-4">
-                                    <span class="text-secondary">Total Earnings</span>
-                                    <br>
-                                    <h3 class="mt-2">76.6M</h3>
+                                <div class="">
+                                    <i class="bi bi-crop me-2"></i>
+                                    <i class="bi bi-dash-lg me-2"></i>
+                                    <i class="bi bi-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><input
+                                                class="form-check-input border border-info border-2 rounded-0"
+                                                type="checkbox" value=""></th>
+                                        <th scope="col">Application</th>
+                                        <th scope="col">Change</th>
+                                        <th scope="col">Handle</th>
+                                        <th scope="col">Avg Price</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col"><input
+                                                class="form-check-input border border-info border-2 rounded-0"
+                                                type="checkbox" value=""></td>
+                                        <td scope="col">Able Pro</td>
+                                        <td scope="col">16,300</td>
+                                        <td scope="col"><canvas class="chart2"></canvas></td>
+                                        <td scope="col">$53</td>
+                                        <td scope="col">
+                                            <p class="text-info">$15,652</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col"><input
+                                                class="form-check-input border border-info border-2 rounded-0"
+                                                type="checkbox" value=""></td>
+                                        <td scope="col">Photoshop</td>
+                                        <td scope="col">26,421</td>
+                                        <td scope="col"><canvas class="chart2"></canvas></td>
+                                        <td scope="col">$35</td>
+                                        <td scope="col">
+                                            <p class="text-info">$18,785</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col"><input
+                                                class="form-check-input border border-info border-2 rounded-0"
+                                                type="checkbox" value=""></td>
+                                        <td scope="col">Guruable</td>
+                                        <td scope="col">8,265</td>
+                                        <td scope="col"><canvas class="chart2"></canvas></td>
+                                        <td scope="col">$98</td>
+                                        <td scope="col">
+                                            <p class="text-info">$9,652</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header py-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    User Activity
+                                </div>
+                                <div class="">
+                                    <i class="bi bi-crop me-2"></i>
+                                    <i class="bi bi-dash-lg me-2"></i>
+                                    <i class="bi bi-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-start">
+                                <div class="me-4">
+                                    <img src="/ProfilePix/profile pic.jpg" alt="Profile Pic"
+                                        style="height: 45px; width: 45px; border-radius: 10%;">
+                                </div>
+                                <div class="text-secondary mb-3">
+                                    <p class="mb-1 text-dark">Brainy Rk</p>
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, test ok</p>
+                                    <i class="bi bi-clock me-2"></i> 2 mins ago
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-start">
+                                <div class="me-4">
+                                    <img src="/ProfilePix/profile pic.jpg" alt="Profile Pic"
+                                        style="height: 45px; width: 45px; border-radius: 10%;">
+                                </div>
+                                <div class="text-secondary mb-3">
+                                    <p class="mb-1 text-dark">Brainy Rk</p>
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, test ok</p>
+                                    <i class="bi bi-clock me-2"></i> 2 mins ago
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-start">
+                                <div class="me-4">
+                                    <img src="/ProfilePix/profile pic.jpg" alt="Profile Pic"
+                                        style="height: 45px; width: 45px; border-radius: 10%;">
+                                </div>
+                                <div class="text-secondary mb-3">
+                                    <p class="mb-1 text-dark">Brainy Rk</p>
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, test ok</p>
+                                    <i class="bi bi-clock me-2"></i> 2 mins ago
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
+        </div>
 
         </div>
 

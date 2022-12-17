@@ -1,6 +1,6 @@
 
 body{
-    background-color:rgb(220, 233, 245);
+    background-color:rgb(225, 239, 251);
 }
 
 .navbar {
@@ -25,6 +25,11 @@ body{
     width: 270px !important;
 }
 
+.chart2 {
+    height: 50px !important;
+    width: 100px !important;
+}
+
 @media (min-width: 990px) {
 
     .offcanvas {
@@ -36,7 +41,7 @@ body{
         margin-left: 270px;
     }
 
-    .targetNav{
+    .targetNav {
         margin-left: 180px;
     }
 

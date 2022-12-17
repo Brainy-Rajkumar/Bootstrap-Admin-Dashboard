@@ -10,32 +10,42 @@ charts.forEach(function (chart) {
       datasets: [
         {
           label: "Visitors",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [2, 1, 3, 4, 3, 6],
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)",
           ],
           borderColor: [
             "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)",
           ],
           borderWidth: 1,
+          borderWidth: 2,
+          tension: 0.2,
+          pointRadius: 1,
         },
       ],
     },
     options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      },
       scales: {
         y: {
           beginAtZero: true,
+          
+          grid: {
+            display: false,
+          },
+          border: {
+            display: false,
+          },
         },
+        x: {
+          grid: {
+            display: false,
+          },
+        }
       },
     },
   });
@@ -49,10 +59,10 @@ $(document).ready(function () {
 
 const chartx = document.querySelectorAll(".chart2");
 
-chartx.forEach(function (chart) {
-  var ctx = chart.getContext("2d");
+chartx.forEach(function (chart2) {
+  var ctx = chart2.getContext("2d");
   var myChart = new Chart(ctx, {
-    type: "doughnut",
+    type: "line",
     data: {
       labels: ["Jan 9", "Jan 12", "Jan 15", "Jan 18", "Jan 21", "Jan 24"],
       datasets: [
@@ -60,30 +70,48 @@ chartx.forEach(function (chart) {
           label: "Visitors",
           data: [12, 19, 3, 5, 2, 3],
           backgroundColor: [
-            "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
             "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)",
           ],
           borderColor: [
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
             "rgba(255, 159, 64, 1)",
           ],
-          borderWidth: 1,
+          borderWidth: 2,
+          tension: 0.4,
+          pointRadius: 0,
+          pointHoverRadius: 0,
         },
       ],
     },
     options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      },
       scales: {
         y: {
           beginAtZero: true,
+          ticks: {
+            display: false,
+          },
+          grid: {
+            display: false,
+          },
+          border: {
+            display: false,
+          },
         },
+        x: {
+          ticks: {
+            display: false,
+          },
+          grid: {
+            display: false,
+          },
+          border: {
+            display: false,
+          }
+        }
       },
     },
   });
