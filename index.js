@@ -122,3 +122,66 @@ $(document).ready(function () {
     $(table).DataTable();
   });
 });
+
+const charty = document.querySelectorAll(".chart3");
+
+charty.forEach(function (chart3) {
+  var ctx = chart3.getContext("2d");
+  var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Jan 9", "Jan 12", "Jan 15", "Jan 18", "Jan 21"],
+      datasets: [
+        {
+          label: "Visitors",
+          data: [12, 19, 3, 5, 2],
+          backgroundColor: [
+            "rgba(255, 255, 255, 255)",
+          ],
+          borderColor: [
+            "rgba(255, 255, 255, 255)",
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            display: false,
+          },
+          grid: {
+            display: false,
+          },
+          border: {
+            display: false,
+          },
+        },
+        x: {
+          ticks: {
+            display: false,
+          },
+          grid: {
+            display: false,
+          },
+          border: {
+            display: false,
+          }
+        }
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".data-table").each(function (_, table) {
+    $(table).DataTable();
+  });
+});
